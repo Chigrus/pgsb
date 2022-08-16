@@ -6,11 +6,21 @@ export default {
   component: PgButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    primary: { description: 'Активная/неактивная кнопка' },
+    label: { description: 'Название кнопки' },
+    backgroundColor: { control: 'color', description: 'Цвет залика кнопки' },
     onClick: {},
     size: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large'],
+      description: 'Размер кнопки'
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: "Описание для кнопки проекта <br><br> <h4>Интеграция</h4><hr><span>Импортировать компонент в приложение:</span><br><br><code>import PgButton from '/pgsb/Button/Button.vue'</code><br><br><span>Добавить компонент:</span><br><br><code>PgButton</code><br><br><span>Добавить код шаблона:</span>",
+      },
     },
   },
 };

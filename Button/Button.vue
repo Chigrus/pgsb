@@ -76,6 +76,10 @@ export default {
 .storybook-button--medium {
   font-size: 14px;
   padding: 11px 20px;
+  @media only screen and (max-width: 1440px){
+    font-size: 13px;
+    padding: 9px 16px;
+  }
 }
 .storybook-button--large {
   font-size: 16px;
