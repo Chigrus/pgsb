@@ -2,7 +2,7 @@
 import { reactive, computed } from 'vue';
 
 export default {
-  name: 'my-button',
+  name: 'pg-button',
 
   props: {
     label: {
