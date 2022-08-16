@@ -4,7 +4,7 @@ import PgButton from './Button.vue';
 export default {
   title: 'Атомы/Кнопка',
   component: PgButton,
-  // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes111
+  // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
     onClick: {},
